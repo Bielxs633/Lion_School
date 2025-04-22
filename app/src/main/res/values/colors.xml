@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="lion_color_blue">#3347B0</color>
+    <color name="lion_color_yellow">#FFC23D</color>
+    <color name="lion_color_gray">#9E9FA4</color>
+    <color name="lion_color_light_gray">#F5F5F5</color>
+    <color name="lion_color_light_white">#CFD4EA</color>
+    <color name="lion_color_purple_white">#9FA9E1</color>
 </resources>

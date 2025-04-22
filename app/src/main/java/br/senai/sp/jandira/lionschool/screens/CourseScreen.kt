@@ -17,21 +17,19 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.modifier.modifierLocalMapOf
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -41,7 +39,7 @@ import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.lionschool.R
 
 @Composable
-fun TelaCursos(modifier: Modifier = Modifier) {
+fun CourseScreen(modifier: Modifier = Modifier) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -65,8 +63,6 @@ fun TelaCursos(modifier: Modifier = Modifier) {
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
                     .padding(top = 26.dp)
-
-
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.lion_logo),
@@ -84,7 +80,7 @@ fun TelaCursos(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = stringResource(R.string.lion_nome),
-                        fontSize = 20.sp,
+                        fontSize = 17.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color(color = 0xFF3347B0)
 
@@ -117,7 +113,11 @@ fun TelaCursos(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .padding(15.dp)
                     .fillMaxWidth(),
-                shape = RoundedCornerShape(10.dp)
+                shape = RoundedCornerShape(10.dp),
+                colors = OutlinedTextFieldDefaults.colors(
+                    unfocusedBorderColor = colorResource(R.color.lion_color_yellow),
+                    unfocusedContainerColor = colorResource(R.color.lion_color_light_gray)
+                )
             )
             Row(
                 verticalAlignment = Alignment.CenterVertically,
@@ -152,6 +152,9 @@ fun TelaCursos(modifier: Modifier = Modifier) {
                     border = BorderStroke(
                         width = 1.dp,
                         color = Color(color = 0xFFFFC23D)
+                    ),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(color = 0xFF3347B0)
                     )
                 ) {
                     Column(
@@ -229,7 +232,10 @@ fun TelaCursos(modifier: Modifier = Modifier) {
                     border = BorderStroke(
                         width = 1.dp,
                         color = Color(color = 0xFFFFC23D)
-                    )
+                    ),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(color = 0xFF3347B0)
+                        )
                 ) {
                     Column(
                         modifier = Modifier
@@ -307,6 +313,9 @@ fun TelaCursos(modifier: Modifier = Modifier) {
                     border = BorderStroke(
                         width = 1.dp,
                         color = Color(color = 0xFFFFC23D)
+                    ),
+                    colors = CardDefaults.cardColors(
+                        containerColor = Color(color = 0xFF3347B0)
                     )
                 ) {
                     Column(
@@ -388,6 +397,6 @@ fun TelaCursos(modifier: Modifier = Modifier) {
 
 @Preview(showSystemUi = true)
 @Composable
-private fun TelaCursosPreview() {
-    TelaCursos()
+private fun CourseScreenPreview() {
+    CourseScreen()
 }

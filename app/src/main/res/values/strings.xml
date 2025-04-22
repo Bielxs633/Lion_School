@@ -18,4 +18,8 @@
     <string name="ele3">Learn to design communication networks.</string>
     <string name="semestre">3 semesters</string>
     <string name="find_student">Find a student</string>
+    <string name="all">all</string>
+    <string name="studying">studying</string>
+    <string name="finished">finished</string>
+
 </resources>
