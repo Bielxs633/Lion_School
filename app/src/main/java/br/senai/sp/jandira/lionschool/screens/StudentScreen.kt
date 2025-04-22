@@ -128,7 +128,9 @@ fun StudentScreen(modifier: Modifier = Modifier) {
                 )
             )
         }
-        Row(){
+        Row(
+
+        ){
             Button(
                 onClick = {},
                 shape = RoundedCornerShape(18.dp),
