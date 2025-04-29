@@ -384,14 +384,9 @@ fun CourseScreen(modifier: Modifier = Modifier) {
                         }
                     }
                 }
-
             }
-
         }
-
     }
-
-
 }
 
 
