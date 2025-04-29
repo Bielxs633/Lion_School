@@ -164,7 +164,10 @@ fun StudentScreen(){
                         modifier = Modifier.padding(horizontal = 5.dp)
                     )
                 }
-                Column(){
+                Column(
+                    modifier = Modifier
+                        .padding(10.dp)
+                ){
                     LionStudentComponent()
                     LionStudentComponent()
                     LionStudentComponent()

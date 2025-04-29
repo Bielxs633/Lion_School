@@ -22,5 +22,7 @@
     <string name="all">all</string>
     <string name="studying">studying</string>
     <string name="finished">finished</string>
+    <string name="completed">Completed</string>
+    <string name="performance">Performance</string>
 
 </resources>
