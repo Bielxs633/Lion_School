@@ -235,7 +235,7 @@ fun CourseScreen(modifier: Modifier = Modifier) {
                     ),
                     colors = CardDefaults.cardColors(
                         containerColor = Color(color = 0xFF3347B0)
-                        )
+                    )
                 ) {
                     Column(
                         modifier = Modifier
@@ -278,7 +278,7 @@ fun CourseScreen(modifier: Modifier = Modifier) {
                             fontSize = 12.sp,
                             color = Color(0xFFFFFFFF),
 
-                        )
+                            )
 
                         Row(
                             modifier = Modifier
